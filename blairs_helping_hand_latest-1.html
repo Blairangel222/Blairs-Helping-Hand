@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A Helping Hand connects people with free information about food, housing, utility assistance, and other support.">
+<title>A Helping Hand | Free help finding help</title>
+<style>
+:root{--ink:#24332d;--muted:#5b6b63;--green:#28634c;--green2:#e8f2ec;--cream:#fbfaf6;--gold:#e8c77b;--line:#dce5dd;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--green);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}
+header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{max-width:1100px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:800;font-size:1.2rem;color:var(--green);text-decoration:none}.brand span{font-size:1.4rem;margin-right:6px}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font-size:.94rem;text-decoration:none;font-weight:650}
+.hero{background:linear-gradient(135deg,#e8f2ec,#f7f1df);padding:76px 22px 64px;text-align:center}
+.wrap{max-width:1000px;margin:auto}.eyebrow{color:var(--green);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.25rem,5vw,4rem);line-height:1.08;margin:12px auto 18px;max-width:850px}
+.lead{font-size:1.18rem;max-width:700px;margin:0 auto 28px;color:#43564c}
+.btn{display:inline-block;background:var(--green);color:white;text-decoration:none;padding:13px 20px;border-radius:999px;font-weight:750}
+.btn.secondary{background:white;color:var(--green);border:1px solid var(--line)}
+section{padding:54px 22px}.section-head{text-align:center;max-width:700px;margin:0 auto 28px}
+h2{font-size:clamp(1.65rem,3vw,2.3rem);line-height:1.2;margin:0 0 10px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 4px 18px #1d3a2b0a}
+.card .emoji{font-size:1.8rem}.card h3{margin:8px 0 6px}.card p{color:var(--muted);margin:0 0 12px}
+.note{background:var(--green2);border-left:4px solid var(--green);padding:18px 20px;border-radius:10px;margin:22px 0}
+.resource{border-top:1px solid var(--line);padding:17px 0}.resource:first-of-type{border-top:0}
+.resource h3{margin:0 0 5px}.resource p{margin:0 0 7px;color:var(--muted)}
+.small{font-size:.9rem;color:var(--muted)}
+.contact{background:#eef4ef}
+form{display:grid;gap:12px;max-width:650px;margin:22px auto 0}
+label{font-weight:700}input,textarea{width:100%;padding:12px 13px;border:1px solid #b9c9bd;border-radius:10px;font:inherit;background:white;color:var(--ink)}
+textarea{min-height:120px;resize:vertical}button{border:0;cursor:pointer;font:inherit}
+footer{background:#21382d;color:#eef5ef;padding:28px 22px;text-align:center}footer a{color:#fff}
+.pill{display:inline-block;background:#f5edda;border-radius:999px;padding:4px 10px;font-size:.8rem;font-weight:750;color:#66501e}
+@media(max-width:760px){.cards{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.hero{padding:54px 18px}.nav{padding:12px 18px}nav a{font-size:.88rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home"><span>❤️</span>A Helping Hand</a>
+    <nav aria-label="Main navigation">
+      <a href="#help">Find help</a><a href="#housing">Housing & bills</a><a href="#homeowners">Homeowner help</a><a href="#about">Our promise</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Free help. Real resources. Nobody left behind.</div>
+      <h1>You don't have to figure everything out alone.</h1>
+      <p class="lead">A Helping Hand is a free place to start when you need help finding food, housing, utility assistance, or support with applications.</p>
+      <a class="btn" href="#help">Find help</a>
+      <a class="btn secondary" href="#contact">Need help with a form?</a>
+    </div>
+  </div>
+
+  <section id="help">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Start where you are</div>
+        <h2>What kind of help do you need?</h2>
+        <p class="small">Choose a topic to find a starting point. Programs have their own rules, availability, and application processes.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="emoji">🥫</div><h3>Food help</h3><p>Find food banks, pantries, meal programs, and food benefits.</p><a href="https://www.feedingamerica.org/find-your-local-foodbank" target="_blank" rel="noopener">Find a food bank →</a></article>
+        <article class="card"><div class="emoji">🏠</div><h3>Housing help</h3><p>Explore rental help, affordable housing, shelters, and eviction resources.</p><a href="#housing">Explore housing help →</a></article>
+        <article class="card"><div class="emoji">💧</div><h3>Utility bills</h3><p>Look for help with water, electricity, gas, and energy costs.</p><a href="#housing">Explore bill assistance →</a></article>
+        <article class="card"><div class="emoji">🏡</div><h3>Homeowner help</h3><p>Find help with home repairs, property costs, and volunteer support.</p><a href="#homeowners">Explore homeowner help →</a></article>
+        <article class="card"><div class="emoji">⚖️</div><h3>Legal help</h3><p>Find legal aid organizations and information about getting help.</p><span class="small">Resource directory coming soon.</span></article>
+        <article class="card"><div class="emoji">💼</div><h3>Jobs & education</h3><p>Find job-search, training, and free learning resources.</p><span class="small">Resource directory coming soon.</span></article>
+        <article class="card"><div class="emoji">❤️</div><h3>Help with forms</h3><p>Ask for guidance if an application or form feels confusing.</p><a href="#contact">Contact us →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="housing">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Housing & utility assistance</div>
+        <h2>Help with a home, rent, or bills</h2>
+        <p>If money is tight, there may be programs that can help. Start with the options below and check directly with each organization for current funding and eligibility.</p>
+      </div>
+
+      <div class="note"><strong>Take one step at a time.</strong> You can contact an organization and ask what documents are needed before you apply. You do not have to do everything today.</div>
+
+      <div class="resource">
+        <h3>💧 Water bill assistance — Economic Security Corporation (ESC)</h3>
+        <p>Economic Security Corporation of Southwest Area serves communities in southwest Missouri. Its assistance programs and service area may depend on the program and current funding. Ask ESC whether water-bill help is currently available for your county and water provider.</p>
+        <a href="https://www.escswa.org/" target="_blank" rel="noopener">Visit Economic Security Corporation →</a>
+        <p class="small">Confirm eligibility, funding, service area, and application steps directly with ESC. Listing does not guarantee assistance.</p>
+      </div>
+      <div class="resource">
+        <h3>🏡 Affordable housing and rental support</h3>
+        <p>For federal housing information and links to local public housing agencies, start with the U.S. Department of Housing and Urban Development.</p>
+        <a href="https://www.hud.gov/states" target="_blank" rel="noopener">Find housing resources by state →</a>
+      </div>
+      <div class="resource">
+        <h3>⚡ Electric, gas, and energy bills</h3>
+        <p>The Low Income Home Energy Assistance Program (LIHEAP) helps eligible households with energy costs. Availability and applications are handled by state and local agencies.</p>
+        <a href="https://www.acf.hhs.gov/ocs/programs/liheap" target="_blank" rel="noopener">Learn about LIHEAP →</a>
+      </div>
+      <div class="resource">
+        <h3>☎️ Another way to find local assistance</h3>
+        <p>You can call 211 if you choose, but it is not the only way to look for help. You can also contact food banks, housing agencies, utility providers, and community organizations directly.</p>
+        <a href="https://www.211.org/" target="_blank" rel="noopener">Visit 211 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="homeowners">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Homeowner help</div>
+        <h2>Help me keep and care for my home</h2>
+        <p>Homeowners need a helping hand, too. Explore possible assistance and community support. Availability, eligibility, and service areas vary, so confirm details with each organization.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="emoji">🛠️</div><h3>Home repairs</h3><p>Look for programs that help eligible homeowners with essential repairs, safety issues, and accessibility improvements.</p><a href="https://www.rd.usda.gov/programs-services/single-family-housing-programs" target="_blank" rel="noopener">USDA single-family housing programs →</a></article>
+        <article class="card"><div class="emoji">🏠</div><h3>Help me save my home</h3><p>If you are worried about missing mortgage payments or foreclosure, contact a HUD-approved housing counselor as early as possible.</p><a href="https://www.hud.gov/counseling" target="_blank" rel="noopener">Find a HUD housing counselor →</a></article>
+        <article class="card"><div class="emoji">🌡️</div><h3>Weatherization and energy</h3><p>Eligible households may qualify for help making a home more energy efficient and reducing energy costs.</p><a href="https://www.energy.gov/scep/wap" target="_blank" rel="noopener">Weatherization Assistance Program →</a></article>
+        <article class="card"><div class="emoji">🌳</div><h3>Yard work and cleanup</h3><p>We want to connect homeowners—especially older adults and people with disabilities—with community groups and volunteers for basic yard help.</p><span class="small">Volunteer directory coming soon. Volunteers and organizations will need to be screened.</span></article>
+        <article class="card"><div class="emoji">🤝</div><h3>Small jobs and neighbor help</h3><p>Find possible community help with light tasks, carrying items, painting, and basic upkeep. Licensed or hazardous work must go to qualified professionals.</p><span class="small">Community volunteer directory coming soon.</span></article>
+        <article class="card"><div class="emoji">💧</div><h3>Home utility bills</h3><p>Explore water, electric, gas, and energy assistance for eligible households.</p><a href="#housing">See utility assistance →</a></article>
+      </div>
+      <div class="note"><strong>Volunteer safety matters.</strong> A Helping Hand will not publish unverified offers or ask people to let strangers into their homes without safeguards. We plan to verify organizations, set clear task limits, and encourage references, insurance, and appropriate background checks where relevant.</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Our promise</div>
+        <h2>Free to use. No judgment. No shame.</h2>
+        <p>A Helping Hand does not charge visitors to use this website or find listed resources. We want information to be easier to understand and easier to reach.</p>
+      </div>
+      <div class="note"><strong>Please remember:</strong> A Helping Hand is an information and guidance project, not a government agency or a provider of financial assistance. We cannot guarantee that a program has funding or that an application will be approved. Always use the official organization’s application and contact details.</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">We're glad you reached out</div>
+        <h2>Contact for help with forms if you need it</h2>
+        <p>You don't have to be good with computers or know what to write. If a form is confusing, tell us what part is giving you trouble. We want to help you find the next step.</p>
+        <span class="pill">Contact section appears on every page</span>
+      </div>
+      <div class="card">
+        <p><strong>Contact form setup is still needed.</strong> This preview does not send or store messages yet. Before the site goes public, the owner needs to connect a secure form service or a dedicated contact email address.</p>
+        <form onsubmit="event.preventDefault();document.getElementById('form-status').textContent='This preview is not connected yet, so your message was not sent. Please do not enter private information.';">
+          <div><label for="name">Your first name (optional)</label><input id="name" name="name" autocomplete="given-name" placeholder="First name"></div>
+          <div><label for="email">Email address (optional)</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+          <div><label for="message">What would you like help with?</label><textarea id="message" name="message" placeholder="Tell us what kind of form or application you need help understanding."></textarea></div>
+          <button class="btn" type="submit">Contact for help with forms if you need it</button>
+          <p id="form-status" class="small" role="status" aria-live="polite">Preview only — messages are not sent.</p>
+        </form>
+      </div>
+      <p class="small" style="text-align:center;margin:18px auto 0;max-width:680px"><strong>Protect your privacy:</strong> Do not send Social Security numbers, passwords, bank details, account numbers, or private documents through an ordinary message. A Helping Hand will never ask you to pay for access to this website.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <strong>❤️ A Helping Hand</strong>
+  <p>Free help finding help. Nobody left behind.</p>
+  <p class="small" style="color:#d4e1d8">Resource information can change. Please confirm details with each official organization.</p>
+</footer>
+</body>
+</html>
