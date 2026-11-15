@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Blair's Helping Hand connects people with free information about food, housing, utility assistance, and other support.">
 <title>Blair's Helping Hand | Free help finding help</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#28634c">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Helping Hand">
+<meta property="og:title" content="Blair's Helping Hand | Free help finding help">
+<meta property="og:description" content="Free help finding food, housing, utility assistance, and support. Nobody left behind.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blairangel222.github.io/">
 <style>
 :root{--ink:#24332d;--muted:#5b6b63;--green:#28634c;--green2:#e8f2ec;--cream:#fbfaf6;--gold:#e8c77b;--line:#dce5dd;--white:#fff}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
@@ -186,5 +198,10 @@ footer{background:#21382d;color:#eef5ef;padding:28px 22px;text-align:center}foot
   <p>Free help finding help. Nobody left behind.</p>
   <p class="small" style="color:#d4e1d8">Resource information can change. Please confirm details with each official organization.</p>
 </footer>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
 </body>
 </html>

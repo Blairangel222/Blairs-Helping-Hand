@@ -1,0 +1,13 @@
+{
+  "name": "Blair's Helping Hand",
+  "short_name": "Helping Hand",
+  "description": "Free help finding help: food, housing, utility assistance, and support.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#28634c",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
